@@ -1,0 +1,21 @@
+modLoader = 'lowcodefml'
+showAsResourcePack = false
+loaderVersion="[47,)"
+license="All rights reserved"
+
+[[mods]]
+modId="grave.test"
+displayName="test"
+version="1.0.0"
+logoFile = "logo.png"
+logoBlur = false
+description='''
+examples for all the scripts in core
+'''
+
+[[dependencies.grave.test]]
+modId = "palladium"
+mandatory = true
+versionRange = ""
+ordering = "NONE"
+side = "BOTH"

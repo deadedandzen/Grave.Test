@@ -1,0 +1,31 @@
+{
+  "name": "Water Walk Test",
+  "icon": "minecraft:water_bucket",
+  "abilities": {
+    "check_stone":{
+      "type": "gravestone:stone_index_detection",
+      "icon": {
+          "type": "palladium:item",
+          "item": "minecraft:air",
+          "count": 0
+      },
+      "title": "null",
+      "bar_color": "light_gray",
+      "hidden": false,
+      "hidden_in_bar": false,
+      "list_index": -1,
+      "gui_position": "null",
+      "description": "null",
+      "score": "cm.ninjago.earth.index",
+      "needs": 6,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action"
+          }
+        ]
+      }
+    }
+
+  }
+}
