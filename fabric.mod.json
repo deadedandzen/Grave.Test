@@ -1,0 +1,11 @@
+{
+    "schemaVersion": 1,
+    "authors": [],
+    "environment": "*",
+    "name": "test",
+    "id": "grave.test",
+    "version": "1.0.0",
+    "description": "examples for all the scripts in core",
+    "icon": "logo.png",
+    "license": "All rights reserved"
+}

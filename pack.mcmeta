@@ -1,0 +1,16 @@
+{
+  "pack": {
+    "id": "grave.test",
+    "description": "examples for all the scripts in core",
+    "pack_format": 15,
+    "version": "1.0.0"
+  },
+  "dependencies": {
+    "common": {
+    },
+    "fabric": {
+    },
+    "forge": {
+    }
+  }
+}
