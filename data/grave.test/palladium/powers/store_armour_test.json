@@ -1,0 +1,113 @@
+{
+  "name": "store armour Test",
+  "icon": "minecraft:iron_chestplate",
+  "abilities": {
+    "store":{
+      "type": "palladium:command",
+      "icon": "minecraft:command_block",
+      "title": "null",
+      "bar_color": "light_gray",
+      "hidden": false,
+      "hidden_in_bar": false,
+      "list_index": -1,
+      "gui_position": "null",
+      "description": "null",
+      "first_tick_commands": [],
+      "last_tick_commands": [],
+      "commands": [
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action"
+          }
+        ]
+      }
+    },
+    "return":{
+      "type": "palladium:command",
+      "icon": "minecraft:command_block",
+      "title": "null",
+      "bar_color": "light_gray",
+      "hidden": false,
+      "hidden_in_bar": false,
+      "list_index": -1,
+      "gui_position": "null",
+      "description": "null",
+      "first_tick_commands": [],
+      "last_tick_commands": [],
+      "commands": [
+          "tag @s add grave.armour.add"
+      ],
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action"
+          }
+        ]
+      }
+    },
+    "store_armour":{
+      "type": "gravestone:store_armour",
+      "icon": {
+          "type": "palladium:item",
+          "item": "minecraft:air",
+          "count": 0
+      },
+      "title": "null",
+      "bar_color": "light_gray",
+      "hidden": false,
+      "hidden_in_bar": false,
+      "list_index": -1,
+      "gui_position": "null",
+      "description": "null",
+      "namespace": "minecraft",
+      "identity": "banana",
+      "sora": "store",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:or",
+            "conditions": [
+              {
+                "type": "palladium:has_tag",
+                "tag": "grave.armour.store"
+              },
+              {
+                "type": "palladium:ability_enabled",
+                "ability": "store"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "return_armour":{
+      "type": "gravestone:store_armour",
+      "icon": {
+          "type": "palladium:item",
+          "item": "minecraft:air",
+          "count": 0
+      },
+      "title": "null",
+      "bar_color": "light_gray",
+      "hidden": false,
+      "hidden_in_bar": false,
+      "list_index": -1,
+      "gui_position": "null",
+      "description": "null",
+      "namespace": "minecraft",
+      "identity": "banana",
+      "sora": "add",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:has_tag",
+            "tag": "grave.armour.add"
+          }
+        ]
+      }
+    }
+
+  }
+}

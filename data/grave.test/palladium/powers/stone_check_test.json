@@ -1,6 +1,6 @@
 {
-  "name": "Water Walk Test",
-  "icon": "minecraft:water_bucket",
+  "name": "stone check Test",
+  "icon": "minecraft:stone",
   "abilities": {
     "check_stone":{
       "type": "gravestone:stone_index_detection",
