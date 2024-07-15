@@ -6,7 +6,7 @@
       "type": "palladium:command",
       "hidden": true,
       "hidden_in_bar": true,
-      "description": "grave.test.speed.base is your players default max speed, grave.test.speed is the end result (because a multiplication score is there you must set that to 1 to see any results in game)",
+      "description": "grave.test.speed.base is your players default max speed, grave.test.speed is the end result (because a multiplication score is there you must set that to 1 to see any results in game). it is easier to have a new score per change you want, even if its multiple additions, although that doesnt matter all that much",
       "first_tick_commands": [
         "scoreboard objectives add grave.test.max_speed.base dummy", 
         "scoreboard objectives add grave.test.max_speed dummy", 
