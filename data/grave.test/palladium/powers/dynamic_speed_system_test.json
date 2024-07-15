@@ -1,0 +1,38 @@
+{
+  "name": "Dynamic Speed System Test",
+  "icon": "minecraft:rabbit",
+  "abilities": {
+    "loop":{
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "description": "grave.test.speed.base is your players default max speed, grave.test.speed is the end result (because a multiplication score is there you must set that to 1 to see any results in game)",
+      "first_tick_commands": [
+        "scoreboard objectives add grave.test.max_speed.base dummy", 
+        "scoreboard objectives add grave.test.max_speed dummy", 
+        "scoreboard objectives add grave.test.speed.additionexample dummy", 
+        "scoreboard objectives add grave.test.speed.multiplicationexample dummy", 
+        "scoreboard objectives add grave.test.speed.removalexample dummy", 
+        "",
+        "",
+        ""
+      ],
+      "last_tick_commands": [],
+      "commands": [
+        "scoreboard players set @s grave.test.max_speed 0",
+        "scoreboard players set @s grave.test.max_speed.base 20",
+        "scoreboard players operation @s grave.test.max_speed = @s grave.test.speed.base",
+        "scoreboard players operation @s grave.test.max_speed += @s grave.test.speed.additionexample",
+        "scoreboard players operation @s grave.test.max_speed -= @s grave.test.speed.removalexample ",
+        "scoreboard players operation @s grave.test.max_speed *= @s grave.test.speed.multiplicationexample",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ]
+  }
+
+  }
+}
