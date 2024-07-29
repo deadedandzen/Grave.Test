@@ -1,0 +1,69 @@
+{
+  "name": "Dynamic Speed System Test",
+  "icon": "minecraft:rabbit",
+  "abilities": {
+    "loop":{
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "description": "",
+      "first_tick_commands": [
+        "scoreboard objectives add grave.scale.test dummy", 
+        "execute unless score @s grave.scale.test matches 0.. run scoreboard players set @s grave.scale.test 15",
+        "",
+        ""
+      ],
+      "last_tick_commands": [],
+      "commands": []
+    },
+    "is_score":{
+      "type": "gravestone:dynamic_pehkui",
+      "icon": "minecraft:blaze_rod",
+      "title": "is",
+      "bar_color": "light_gray",
+      "hidden": false,
+      "hidden_in_bar": false,
+      "list_index": 0,
+      "gui_position": "null",
+      "description": "null",
+      "scale_type": "pehkui:eye_height",
+      "scale_number": 1.1,
+      "scoreboard": "grave.scale.test",
+      "scoreboard_divider": 10,
+      "delay": 0,
+      "is_score": "True",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:held"
+          }
+        ]
+      }
+    },
+    "isnt_score":{
+      "type": "gravestone:dynamic_pehkui",
+      "icon": "minecraft:blaze_rod",
+      "title": "isnt",
+      "bar_color": "light_gray",
+      "hidden": false,
+      "hidden_in_bar": false,
+      "list_index": 1,
+      "gui_position": "null",
+      "description": "null",
+      "scale_type": "pehkui:eye_height",
+      "scale_number": 1.1,
+      "scoreboard": "grave.scale.test",
+      "scoreboard_divider": 0,
+      "delay": 0,
+      "is_score": "False",
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:held"
+          }
+        ]
+      }
+    }
+
+  }
+}
