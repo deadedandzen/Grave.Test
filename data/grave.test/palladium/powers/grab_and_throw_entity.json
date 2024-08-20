@@ -9,7 +9,7 @@
 			"bar_color": "light_gray",
 			"hidden": true,
 			"hidden_in_bar": false,
-			"list_index": 1,
+			"list_index": 0,
 			"first_tick_commands": ["execute anchored eyes run function grave.core:pick_entity/start_ray"],
 			"last_tick_commands": ["tag @s remove grave.pick.grabbing",
 							"tag @e[sort=nearest,limit=1,tag=grave.pick.picked,distance=0..9] remove grave.pick.picked", 
