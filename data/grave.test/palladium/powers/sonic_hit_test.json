@@ -1,0 +1,15 @@
+{
+  "name": "Sonic Hit Test",
+  "icon": "minecraft:rabbit",
+  "abilities": {
+    "loop":{
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "description": "Change the number after matches from 1-10 to whatever intensity level you feel fits your power.",
+      "first_tick_commands": [],
+      "last_tick_commands": [],
+      "commands": ["execute if score @s grave.sonic_hit matches 5 run effect give @s grave.core:sonic_deafening 10 0 false"]
+    }
+  }
+}
