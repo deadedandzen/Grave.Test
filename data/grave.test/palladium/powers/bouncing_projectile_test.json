@@ -1,0 +1,68 @@
+{
+  "name": "Bouncing Projectile Test",
+  "icon": "minecraft:clock",
+  "abilities": {
+    "loop":{
+      "type": "palladium:command",
+      "hidden": true,
+      "hidden_in_bar": true,
+      "first_tick_commands": [],
+      "last_tick_commands": [],
+      "commands": ["execute as @e[tag=grave.bounce_test] at @s run particle minecraft:flame ~ ~ ~"]
+    },
+    "bounce_projectile":{
+			"type": "palladium:projectile",
+			"entity_type": "palladium:custom_projectile",
+			"title": "Bouncing Projectile",
+      "description": "either use function grave.core:util/bounce or function grave.core:util/small_bounce on CommandOnBlockHit.",
+			"hidden": false,
+			"hidden_in_bar": false,
+      "list_index": 0,
+			"velocity": 1.5,
+			"entity_data": {
+			  "Damage": 2,
+			  "Gravity": 0.001,
+			  "Size": 0.75,
+			  "Lifetime": 500,
+			  "DieOnEntityHit": true,
+			  "DieOnBlockHit": false,
+			  "CommandOnEntityHit": "",
+			  "CommandOnBlockHit": "function grave.core:util/bounce",
+			  "Appearances": [
+			]
+			},
+			"inaccuracy": 0,
+			"swinging_arm": "none",
+			"damage_from_player": false,
+			"conditions":{
+				"enabling":[
+          {
+						"type": "palladium:action"
+					}
+				],
+				"unlocking":[
+				]
+			}
+		},
+		"bounce_projectile_commands":{
+			"type": "palladium:command",
+			"hidden": true,
+      "description": "change grave.bounceMax to the amount of MAX bounces you want.",
+			"first_tick_commands": [],
+			"last_tick_commands": [],
+			"commands": [
+        "tag @e[type=palladium:custom_projectile,sort=nearest,limit=1] add grave.bounce_test",
+				"tag @e[type=palladium:custom_projectile,sort=nearest,limit=1] add grave.bouncing_projectile",
+				"scoreboard players set @e[type=palladium:custom_projectile,sort=nearest,limit=1] grave.bounceMax 5"
+			],
+			"conditions": {
+			  "enabling": [
+					 {
+						"type": "palladium:ability_enabled",
+						"ability": "bounce_projectile"
+					 }
+			  ]
+			}
+		}
+  }
+}
