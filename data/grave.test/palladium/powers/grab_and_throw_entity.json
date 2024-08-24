@@ -1,5 +1,5 @@
 {
-  "name": "Sonic Hit Test",
+  "name": "Grab and Throw Test",
   "icon": "minecraft:rabbit",
   "abilities": {
 		"pick_entity":{
