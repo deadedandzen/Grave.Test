@@ -1,0 +1,30 @@
+{
+  "name": "BOOM Test",
+  "icon": "minecraft:stone",
+  "abilities": {
+    "aoe":{
+      "type": "gravestone:explode",
+      "icon": {
+          "type": "palladium:item",
+          "item": "minecraft:air",
+          "count": 0
+      },
+      "title": "null",
+      "bar_color": "light_gray",
+      "hidden": false,
+      "hidden_in_bar": false,
+      "list_index": -1,
+      "gui_position": "null",
+      "description": "null",
+      "explosion": 127,
+      "conditions": {
+        "enabling": [
+          {
+            "type": "palladium:action"
+          }
+        ]
+      }
+    }
+
+  }
+}
